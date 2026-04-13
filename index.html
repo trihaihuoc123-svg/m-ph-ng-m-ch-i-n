@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web mô phỏng mạch điện</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>SCADA Mini</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Web mô phỏng mạch điện</h1>
-    <div id="menu">
-        <button onclick="goTo('pages/motor.html')">Motor</button>
-        <button onclick="goTo('pages/relay.html')">Relay</button>
-    </div>
-    <script src="script.js"></script>
+
+<h1>⚡ SCADA MINI SYSTEM</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>Motor 1</h3>
+<p id="m1">OFF</p>
+<button onclick="toggle('m1')">ON/OFF</button>
+<button onclick="openPage()">Chi tiết</button>
+</div>
+
+<div class="card">
+<h3>Motor 2</h3>
+<p id="m2">OFF</p>
+<button onclick="toggle('m2')">ON/OFF</button>
+</div>
+
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
